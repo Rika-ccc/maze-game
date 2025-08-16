@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#gameContainer {
+    position: relative;
+    display: inline-block;
+}
+
+canvas {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#leftControls {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#rightControls {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+    gap: 5px;
+}
+
+.dirRow {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* 左右のボタン間の隙間 */
+}
+
+
+button.funBtn {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid #ff9800;
+    background: linear-gradient(45deg, #ffeb3b, #ff5722);
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #888888;
+    transition: all 0.2s;
+}
+
+button.funBtn:hover {
+    transform: scale(1.1);
+}
