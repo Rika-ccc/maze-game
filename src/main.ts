@@ -17,7 +17,7 @@ let gameOver = false;
 
 // キャラクター画像読み込み
 const playerImg = new Image();
-playerImg.src = "/assets/lv1.png";
+playerImg.src = "../assets/lv1.png";
 
 function generateMaze(): Maze {
     const m: Maze = Array.from({ length: rows }, () => Array(cols).fill(1));
