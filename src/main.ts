@@ -16,11 +16,9 @@ const goal = { x: cols - 1, y: rows - 1 };
 let gameOver = false;
 
 // キャラクター画像読み込み
-// TypeScript で import
-import playerImgSrc from './assets/lv1.png';
-
 const playerImg = new Image();
-playerImg.src = playerImgSrc;
+playerImg.src = "/assets/lv1.png"; // public 配下の画像をルートから参照
+
 
 function generateMaze(): Maze {
     const m: Maze = Array.from({ length: rows }, () => Array(cols).fill(1));
