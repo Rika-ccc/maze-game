@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>迷路ゲーム</title>
+  <script type="module" crossorigin src="/assets/index-DRTBDOuf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DBxd5p5P.css">
+</head>
+<body>
+<h1>迷路ゲーム</h1>
+<div id="gameContainer">
+    <canvas id="mazeCanvas"></canvas>
+
+    <div id="controls">
+        <div id="leftControls">
+            <button id="startBtn" class="funBtn">スタート</button>
+            <button id="retryBtn" class="funBtn">リトライ</button>
+        </div>
+
+        <div id="rightControls">
+        <div class="dirRow"><button class="dirBtn funBtn" data-dir="up">↑</button></div>
+        <div class="dirRow">
+        <button class="dirBtn funBtn" data-dir="left">←</button>
+        <button class="dirBtn funBtn" data-dir="right">→</button>
+        </div>
+        <div class="dirRow"><button class="dirBtn funBtn" data-dir="down">↓</button></div>
+</div>
+
+    </div>
+</div>
+
+</body>
+</html>
