@@ -16,9 +16,11 @@ const goal = { x: cols - 1, y: rows - 1 };
 let gameOver = false;
 
 // キャラクター画像読み込み
-const playerImg = new Image();
-playerImg.src = "./assets/lv1.png"; // index.html から見た相対パス
+// TypeScript で import
+import playerImgSrc from './assets/lv1.png';
 
+const playerImg = new Image();
+playerImg.src = playerImgSrc;
 
 function generateMaze(): Maze {
     const m: Maze = Array.from({ length: rows }, () => Array(cols).fill(1));
