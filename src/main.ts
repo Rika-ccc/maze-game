@@ -17,7 +17,8 @@ let gameOver = false;
 
 // キャラクター画像読み込み
 const playerImg = new Image();
-playerImg.src = "../assets/lv1.png";
+playerImg.src = "./assets/lv1.png"; // index.html から見た相対パス
+
 
 function generateMaze(): Maze {
     const m: Maze = Array.from({ length: rows }, () => Array(cols).fill(1));
